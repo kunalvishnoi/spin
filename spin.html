@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spin Loader</title>
+	<style>
+		.loader{
+			position: absolute;
+			top: 46%;
+			left: 46%;
+
+		}
+		.spin
+		{
+			box-sizing: border-box;
+			height: 75px;
+			width:75px;
+			border-radius: 50%;
+			border: 0px  #880e4f ;
+			box-shadow: 0 10px 0 24px #880e4f inset;
+            animation: spin 2s infinite linear;
+		}
+		@keyframes spin{
+			0%{
+				transform: rotate(0deg);
+				background: #b3e5fc;
+
+
+			}
+			25%{
+				transform: rotate(90deg);
+		        background: #4fc3f7;	
+			}
+
+			50%{
+				transform: rotate(180deg);
+				background: #039be5;
+			}
+			100%{
+				transform: rotate(360deg);
+		        background: #b3e5fc
+		}
+	</style>
+</head>
+<body>
+<div class="loader">
+<div class="spin"></div>
+</div>
+
+
+</body>
+</html>
